@@ -9,9 +9,9 @@ class Button1 extends React.Component {
     };
   }
   handleClick = () => {
-    this.setState({
-      counter:this.state.counter+1
-      } );    
+    this.setState(prevState => ({
+      counter: prevState.counter + 1
+    }));  
   };
   render() {
     return( <button onClick={this.handleClick}>
